@@ -18,4 +18,11 @@ class CashRegister
     @cart << item_details
     @total += price * amount
   end
+
+  def discount
+    if @discount == 0
+      puts "There is no discount to apply"
+    end
+    @total -= @total * @discount / 100
+    puts "After"
 end
