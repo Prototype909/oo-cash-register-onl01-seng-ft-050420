@@ -26,4 +26,14 @@ class CashRegister
     @total -= @total * @discount / 100
     puts "Discount applied, total is $#{@total}."
   end
+
+  def items
+    items = []
+    @cart.each do | item_info |
+            for qty in 1..item_info[:quantity] 
+        item << item_details[:name]
+      end 
+    end 
+    item_details
+  end 
 end
