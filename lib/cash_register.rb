@@ -25,4 +25,5 @@ class CashRegister
     end
     @total -= @total * @discount / 100
     puts "Discount applied, total is $#{@total}."
+  end
 end
