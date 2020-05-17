@@ -30,10 +30,10 @@ class CashRegister
   def items
     items = []
     @cart.each do | item_info |
-            for qty in 1..item_info[:quantity] 
+            for qty in 1..item_info[:quantity]
         item << item_details[:name]
-      end 
-    end 
+      end
+    end
     item_details
-  end 
+  end
 end
